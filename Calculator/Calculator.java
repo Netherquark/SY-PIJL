@@ -11,6 +11,14 @@ import java.util.Map;
 
 public class Calculator {
 
+    /**
+     * Performs an arithmetic operation on two numbers.
+     *
+     * @param a        the first operand.
+     * @param b        the second operand.
+     * @param operator the operator to apply (+, -, *, /).
+     * @return the result of the operation as a double.
+     */
     public static double performArithmetic(double a, double b, char operator) {
         switch (operator) {
             case '+':
@@ -31,6 +39,12 @@ public class Calculator {
         }
     }
 
+    /**
+     * Generates the Fibonacci sequence for the specified number of terms.
+     *
+     * @param n the number of terms to generate.
+     * @return an array containing the Fibonacci sequence.
+     */
     public static int[] generateFibonacci(int n) {
         if (n <= 0) {
             return new int[0];
@@ -46,6 +60,12 @@ public class Calculator {
         return fib;
     }
 
+    /**
+     * Calculates the mode (the most frequent value) of an integer array.
+     *
+     * @param arr an array of integers.
+     * @return the mode of the array.
+     */
     public static int calculateMode(int[] arr) {
         if (arr.length == 0) return 0;
         Map<Integer, Integer> frequencyMap = new HashMap<>();
@@ -63,6 +83,12 @@ public class Calculator {
         return mode;
     }
 
+    /**
+     * Calculates the mean (average) of an integer array.
+     *
+     * @param arr an array of integers.
+     * @return the mean value as a double.
+     */
     public static double calculateMean(int[] arr) {
         if (arr.length == 0) return 0;
         int sum = 0;
